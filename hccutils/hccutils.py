@@ -104,7 +104,7 @@ def mv_to_delim(df: pd.DataFrame, keys: list = [], assoc: dict = {}, cols: list 
         result_df = pd.merge(result_df, dfc, on=keys, how='left')
 
     # Return the result dataframe with the columns in the original order
-    return(result_df.loc[:,colnames])
+    return(result_df.loc[:,colnames]) 
 
 def mv_to_commas(df: pd.DataFrame, keys: list = [], assoc: dict = {}, cols: list = []) -> pd.DataFrame:
     return(mv_to_delim(df, keys=keys, assoc=assoc, cols=cols, delim=', '))
