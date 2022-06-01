@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel", "toml"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hccutils"
+version = "0.1.1"
+dependencies = [
+    "itertools",
+    "numpy",
+    "pandas",
+    "pydantic",
+    "python-dotenv",
+    "pyyaml",
+]
+description = "A module of tools used by HCC staff"
+readme = "README.md"
+authors = [{ name = "David Onder", email = "donder@haywood.edu" }]
+license = {file = "LICENSE"}
